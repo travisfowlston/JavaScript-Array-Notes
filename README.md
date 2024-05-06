@@ -1,2 +1,3 @@
-# JavaScript-Notes
-This repository contains all work related to JavaScript
+# JavaScript Notes
+
+This repository contains all notes related to JavaScript!
