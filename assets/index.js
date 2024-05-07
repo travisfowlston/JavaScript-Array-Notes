@@ -38,6 +38,7 @@ addFruit("grapefruit"); */
 
 console.log(fruits);
 console.log(numbers);
+
 // This is a conditional statement that checks if the array has more than 5 elements
 /* if (fruits.length >= 5) {
   console.log("That's a lot of fruit!");
