@@ -1,13 +1,13 @@
 // JavaScript Notes
 // array = A variable like structure that can hold more than 1 value
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numbers = [2, 1, 3, 9, 10, 7, 6, 8, 4, 5];
 
+// numbers.sort((a, b) => (a - b)); = sorts the array in numerical order
 // numbers.sort((a, b) => (b - a)); = sorts the array in reverse numerical order
 
 let fruits = ["apple", "orange", "grape", "pineapple", "cherry", "banana"];
 
-// fruits[0]; = gets the first element of the array
 // fruits.sort(); = sorts the array in alphabetical order
 // fruits.sort().reverse(); = sorts the array in reverse alphabetical order
 // fruits.push("cucumber"); = adds element to the end of the array
@@ -16,6 +16,12 @@ let fruits = ["apple", "orange", "grape", "pineapple", "cherry", "banana"];
 // fruits.shift(); = removes first element of the array
 // fruits.length; = gets the total number of elements in the array
 // fruits.indexOf("apple"); = finds the index of the element, returns -1 if no index is found
+
+// forEach() = used to iterate over the elements of an array and apply a specified function (callback) to each element.
+// array.forEach(callback)
+// element, index, array are provided
+
+// map() = accepts a callback and applies it to each element in the array, then returns a new array with the results.
 
 // This is a for loop that prints out each element in the array
 /* for (let i = 0; i < fruits.length; i++) {
@@ -36,10 +42,24 @@ addFruit("cucumber");
 addFruit("pear");
 addFruit("grapefruit"); */
 
-console.log(fruits);
-console.log(numbers);
+// foreach() method example
+/* fruits.forEach(capitalize) // Executes a callback function on each element in the array. Change the callback to the function you want to execute.
+fruits.forEach(display); // Displays the elements in the array
 
-// This is a conditional statement that checks if the array has more than 5 elements
+function display(element) {
+  console.log(element);
+}
+function upperCase(element, index, array) {
+  array[index] = element.toUpperCase();
+}
+function capitalize(element, index, array) {
+  array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+} */
+
+// console.log(fruits);
+// console.log(numbers);
+
+// This is a conditional statement that checks if the array has greater than or equal to 5 elements
 /* if (fruits.length >= 5) {
   console.log("That's a lot of fruit!");
 } else {
