@@ -23,6 +23,8 @@ let fruits = ["apple", "orange", "grape", "pineapple", "cherry", "banana"];
 
 // map() = accepts a callback and applies it to each element in the array, then returns a new array with the results.
 
+// filter() = creates a new array with all elements that pass the test implemented by the provided function.
+
 // This is a for loop that prints out each element in the array
 /* for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
@@ -43,7 +45,9 @@ addFruit("pear");
 addFruit("grapefruit"); */
 
 // foreach() method example
-/* fruits.forEach(capitalize) // Executes a callback function on each element in the array. Change the callback to the function you want to execute.
+/* fruits.forEach((fruit) => console.log(fruit.charAt(0).toUpperCase() + fruit.slice(1))); // Capitalizes the first letter of each element in the array by passing in an element from the fruits array (such as apple) and console logging the first letter capitalized and the rest of the word sliced by getting the index of the first letter and slicing the rest of the word. Does not return a new array.
+
+fruits.forEach(capitalize) // Executes a callback function on each element in the array. Change the callback to the function you want to execute.
 fruits.forEach(display); // Displays the elements in the array
 
 function display(element) {
@@ -55,6 +59,10 @@ function upperCase(element, index, array) {
 function capitalize(element, index, array) {
   array[index] = element.charAt(0).toUpperCase() + element.slice(1);
 } */
+
+// map() method example
+/* const capitalizeFruit = fruits.map((fruit) => fruit.charAt(0).toUpperCase() + fruit.slice(1)); // Capitalizes the first letter of each element in the array and returns a new array
+console.log(capitalizeFruit); */
 
 // console.log(fruits);
 // console.log(numbers);
