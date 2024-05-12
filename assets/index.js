@@ -1,4 +1,4 @@
-// JavaScript Notes
+// JavaScript Array Notes
 // array = A variable like structure that can hold more than 1 value
 
 let numbers = [2, 1, 3, 9, 10, 7, 6, 8, 4, 5];
@@ -30,8 +30,11 @@ let fruits = ["apple", "orange", "grape", "pineapple", "cherry", "banana"];
     console.log(fruits[i])
 } */
 
+// filter() method example
+/* const filteredFruit = fruits.filter((fruit) => fruit.length > 5) // filters the array and returns a new array with elements that have a length greater than 5
+console.log(filteredFruit)
 // This is a function that deletes a fruit from the array using the filter method
-/* function deleteFruit(index) {
+function deleteFruit(index) {
   fruits = fruits.filter((_, i) => i !== index);
 }
 deleteFruit(1); */
