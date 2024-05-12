@@ -25,6 +25,8 @@ let fruits = ["apple", "orange", "grape", "pineapple", "cherry", "banana"];
 
 // filter() = creates a new array with all elements that pass the test implemented by the provided function.
 
+// reduce() = applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
 // This is a for loop that prints out each element in the array
 /* for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
@@ -66,6 +68,10 @@ function capitalize(element, index, array) {
 // map() method example
 /* const capitalizeFruit = fruits.map((fruit) => fruit.charAt(0).toUpperCase() + fruit.slice(1)); // Capitalizes the first letter of each element in the array and returns a new array
 console.log(capitalizeFruit); */
+
+// reduce() method example
+/* const sum = numbers.reduce((previousNum, number) => previousNum + number); // Adds all the numbers in the array and returns the sum
+console.log(sum.toFixed(2)); // Rounds the sum to 2 decimal places */
 
 // console.log(fruits);
 // console.log(numbers);
